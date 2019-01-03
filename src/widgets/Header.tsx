@@ -1,16 +1,11 @@
 import { tsx } from "esri/widgets/support/widget";
+import React from "react"
 
-const CSS = {
-  base: "top-nav",
-  title: "top-nav-title"
-};
 
-interface HeaderProperties {
-  appName: string;
+class Header extends React.Component {
+  render() {
+    return <h1>Hello World</h1>;
+  }
 }
 
-export const Header = (props: HeaderProperties) => (
-  <header class={CSS.base}>
-    <span class={CSS.title}>{props.appName}</span>
-  </header>
-);
+export default Header;
